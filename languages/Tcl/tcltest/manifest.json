@@ -1,0 +1,17 @@
+
+   {
+      "image_name":"cyberdojofoundation/tcl8.5_tcltest",
+      "display_name": "Tcl, TclTest",
+      "unit_test_framework": "tcltest",
+      "filename_extension": ".tcl",
+      "tab_size": 4,
+      "visible_filenames": [
+        "hiker.tcl",
+        "hiker_test.tcl",
+        "cyber-dojo.sh"
+      ],
+      "progress_regexs" : [
+        "*FAILED",
+        "*Failed*0"
+      ]
+   }

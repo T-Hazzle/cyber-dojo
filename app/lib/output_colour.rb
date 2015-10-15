@@ -263,4 +263,13 @@ module OutputColour # mix-in
     end
   end
 
+  def self.parse_tcltest(output)
+    tcl_pattern =  /Total	(\d+)	Passed	(\d+)	Skipped	(\d+)	Failed	(\d+)/
+    if match = tcl_pattern.match(output)
+      match[4] == '0' ? :green : :red
+    else
+      :amber
+    end
+  end
+
 end
